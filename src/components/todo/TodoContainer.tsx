@@ -11,7 +11,7 @@ const TodoContainer = () => {
 
     // * from server
 
-    const { data: todos, isdError, isLoading } = useGetTodosQuery(undefined)
+    const { data: todos, isError, isLoading } = useGetTodosQuery(undefined)
     if (isLoading) {
         return <p>Loading....</p>
     }
